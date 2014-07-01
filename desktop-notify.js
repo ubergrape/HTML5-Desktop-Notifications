@@ -95,6 +95,7 @@
                 "ieVerification": ieVerification + 1
             };
         }
+        notification.onclick = options.onclick;
         return notification;
     }
     function getWrapper(notification) {
@@ -163,7 +164,7 @@
         }
         return settings;
     }
-    
+
     function createNotification(title, options) {
         var notification,
             notificationWrapper;
